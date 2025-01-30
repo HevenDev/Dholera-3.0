@@ -1,0 +1,83 @@
+@media (max-width: 1024px) {
+  .popupImg{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .homeHeadingDiv{
+    width: 450px;
+    padding-top: 2.5rem;
+  }
+  .homeHeadingDiv h1{
+    font-size: 35px;
+  }
+  .overviewSubhead{
+    width: 250px;
+    height: 35%;
+  }
+  .overviewSubhead p{
+    font-size: 15px;
+  }
+  .overviewSection, .amenitiesSection, .locationMap{
+    padding: 0rem 1rem;
+  }
+  .amenitiesImg{
+    width: 450px;
+  }
+}
+@media (max-width: 550px) {
+  .overviewHeading, .amenitiesHeading, .floorPlanHeading, .galleryHeading, .locatingHeading, .aboutHeading{
+    font-size: 22px;
+  }
+  .homeHeadingDiv{
+    width: 300px;
+    padding: 4rem 0 0 0.5rem;
+  }
+  .homeHeadingDiv::after{
+    display: none;
+  }
+  .homeHeadingDiv h1:nth-of-type(2){
+    transform: translateX(0);
+  }
+  .enquiry{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+  }
+  .enquiry button{
+    width: 100%;
+    border-radius: 0;
+  }
+  .enquiry::before, .enquiry::after{
+    display: none;
+  }
+  .logo {
+    margin-top: 0.7rem;
+  }
+  .dropDownMenu{
+    right: 0;
+  }
+  .overviewImage{
+    display: none;
+  }
+  .amenitiesImg, .galleryImg{
+    width: 290px;
+  }
+  .floorPlans{
+    width: 300px;
+    height: 300px;
+  }
+  .aboutForm{
+    width: 300px;
+  }
+  .popupForm{
+    width: 290px;
+  }
+  .aboutPara{
+    width: 100%;
+    font-size: 16px;
+  }
+}

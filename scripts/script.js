@@ -30,3 +30,21 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", showPopup);
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const dropDown = document.querySelector(".dropDownMenu");
+  const navLinks = document.querySelector(".navLinks");
+  const links = document.querySelectorAll("li a");
+
+  dropDown.addEventListener("click", () => {
+    dropDown.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+
+  // Add event listeners to links inside navLinks
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      dropDown.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  });
+})
